@@ -1,23 +1,31 @@
+// Import required part
 import React,{useState} from 'react';
 import './App.css';
 
 function App() {
   const [result,setResult]=useState("")
+  // Function for hnadle input
   const input=(e)=>{
     setResult(result.concat(e.target.value));
     console.log(e.target.value)
   }
+  // Function for handle reset button
   const reset=()=>{
     setResult("");
   }
+  // Function for calculate value
   const total_val=()=>{
+    console.log(result);
     setResult(eval(result).toString())
   }
+  // All html that show in webpage
   return (
   <div className='container'>
+    {/* Section for display result */}
     <div className='screen'>
       <input type='text' placeholder='0' className='input_box' value={result} />
      </div>
+     {/* Create All button and call their related function with their value */}
     <div className='buttons'>
     <button className='btn' onClick={reset}>C</button>
     <button className='btn' onClick={reset}>+/-</button>

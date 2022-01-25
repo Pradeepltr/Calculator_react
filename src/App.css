@@ -1,3 +1,4 @@
+/* Style for root element */
 *{
   padding: 0;
   margin: 0;
@@ -6,6 +7,7 @@
   -webkit-user-drag: none;
   
 }
+/* Style for body */
 body{
   display: grid;
   place-content: center;
@@ -14,6 +16,7 @@ body{
   width: 100vh;
   font-size: 2rem;
 }
+/* Styles for main calculator container */
 .container{
   height: 80vh;
   width: 50vh;
@@ -24,6 +27,7 @@ body{
   padding-bottom: 1.5rem;
   margin-left: 110%;
 }
+/* Styles for result display part */
 .screen{
   width: 100%;
   height: 15%;
@@ -33,17 +37,19 @@ body{
   margin-bottom: 1rem;
 
 }
+/* Styles for input box where result show */
 .input_box{
   
   width: 100%;
   height: 100%;
-  font-size: 2rem;
+  font-size: 25px;
   outline: none;
   border: none;
   text-align: right;
   background-color: inherit;
   
 }
+/* STyles for button part */
 .buttons{
   display: grid;
   height: 100%;
@@ -52,6 +58,7 @@ body{
   grid-template-rows: repeat(6,1fr);
   gap: .2rem;
 }
+/* Styles for all buttons */
 .btn{
   background-color: gray;
   border-radius: 50%;
@@ -60,12 +67,15 @@ body{
   color: white;
   text-align: center;
 }
+/* Styles for action button like add subtract multiply divide */
 .orange{
   background-color: orange;
 }
+/* Styles for zero button */
 .zero{
   grid-column: 1/ span 2;
 }
+/* Styles for button hover effect */
 .btn:hover{
   background-color: pink;
   cursor: pointer;
@@ -73,6 +83,7 @@ body{
 .orange:hover{
   background-color: salmon;
 }
+/* Styles for responsibe for all screen */
 @media only screen and (max-width: 689px)
 {
   .container{
